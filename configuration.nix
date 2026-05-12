@@ -51,6 +51,11 @@
 	khelpcenter
   ];
 
+  # exclude xterm
+  services.xserver.excludePackages = with pkgs; [
+  	xterm
+  ];
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "gb";
@@ -124,7 +129,9 @@
 	xfce.thunar
 	tree
 	pkgs.bitwarden-desktop
-
+	pkgs.ripgrep
+	pkgs.unzip
+	pkgs.nodejs
 	# browsers (palemoon as default)
 	pkgs.palemoon-bin
 	pkgs.firefox
