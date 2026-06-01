@@ -132,6 +132,8 @@
 	pkgs.ripgrep
 	pkgs.unzip
 	pkgs.nodejs
+	pkgs.obs-studio
+	pkgs.kdePackages.dragon
 	# browsers (palemoon as default)
 	pkgs.palemoon-bin
 	pkgs.firefox
